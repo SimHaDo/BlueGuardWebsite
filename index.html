@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlueGuard Authenticator</title>
+  <meta name="description" content="BlueGuard Authenticator keeps your 2FA tokens, passwords and secure notes protected in one elegant app." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="site-header glass">
+    <a class="brand" href="#top" aria-label="BlueGuard Home">
+      <img src="assets/logo.png" alt="BlueGuard Logo" class="brand-logo" />
+      <span>BlueGuard</span>
+    </a>
+
+    <nav class="top-nav">
+      <a href="#features" data-i18n="navFeatures">Features</a>
+      <a href="#screens" data-i18n="navScreens">Screens</a>
+      <a href="#security" data-i18n="navSecurity">Security</a>
+      <a href="#legal" data-i18n="navLegal">Legal</a>
+    </nav>
+
+    <div class="actions">
+      <label for="lang" class="sr-only">Language</label>
+      <select id="lang" class="lang-switch" aria-label="Language">
+        <option value="en">EN</option>
+        <option value="ja">JA</option>
+        <option value="ru">RU</option>
+        <option value="uk">UK</option>
+        <option value="pt">PT</option>
+      </select>
+      <a class="btn btn-primary" href="#download" data-i18n="heroCta">Get BlueGuard</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow" data-i18n="heroEyebrow">Authenticator + Password Vault + Secure Notes</p>
+        <h1 data-i18n="heroTitle">Security that feels cinematic.</h1>
+        <p class="lead" data-i18n="heroLead">
+          BlueGuard is the premium way to protect your digital life with 2FA codes, encrypted passwords, and private notes in one lightning-fast app.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#download" data-i18n="heroCta">Get BlueGuard</a>
+          <a class="btn btn-secondary" href="#features" data-i18n="heroCtaSecondary">Explore Features</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" id="heroVisual">
+        <div class="orb orb-a"></div>
+        <div class="orb orb-b"></div>
+        <img src="assets/hero-main.png" alt="BlueGuard artwork" class="hero-art" />
+        <div class="floating-card card-a glass" data-speed="0.08" data-i18n="floatCardA">Biometric Lock</div>
+        <div class="floating-card card-b glass" data-speed="0.12" data-i18n="floatCardB">Encrypted Backup</div>
+        <div class="floating-card card-c glass" data-speed="0.1" data-i18n="floatCardC">Cross-device Sync</div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="featuresEyebrow">Core Capabilities</p>
+        <h2 data-i18n="featuresTitle">Made for speed. Built for trust.</h2>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature-card reveal magnetic">
+          <h3 data-i18n="f1Title">Authenticator</h3>
+          <p data-i18n="f1Body">Generate and auto-refresh TOTP tokens for all your services with a clean, high-contrast timer UI.</p>
+        </article>
+        <article class="feature-card reveal magnetic">
+          <h3 data-i18n="f2Title">Password Vault</h3>
+          <p data-i18n="f2Body">Store logins and recovery data with private local encryption and quick search for instant access.</p>
+        </article>
+        <article class="feature-card reveal magnetic">
+          <h3 data-i18n="f3Title">Secure Notes</h3>
+          <p data-i18n="f3Body">Keep seed phrases, backup codes, and private text protected behind biometric and vault protection.</p>
+        </article>
+        <article class="feature-card reveal magnetic">
+          <h3 data-i18n="f4Title">Cloud Backup</h3>
+          <p data-i18n="f4Body">Optional encrypted sync through your secure cloud account to restore fast on a new device.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section artwall">
+      <div class="section-head reveal">
+        <p class="eyebrow">Visual Story</p>
+        <h2>BlueGuard in motion and detail.</h2>
+      </div>
+      <div class="art-grid">
+        <img src="assets/AddNewTokenIllustration.png" alt="BlueGuard token illustration" class="art-shot reveal" />
+        <img src="assets/AddNewPasswordIllustt.png" alt="BlueGuard password illustration" class="art-shot reveal" />
+        <img src="assets/SecretNotesIllustrstion.png" alt="BlueGuard secure notes illustration" class="art-shot reveal" />
+      </div>
+    </section>
+
+    <section id="screens" class="section screens sticky-wrapper">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="screensEyebrow">Interface Preview</p>
+        <h2 data-i18n="screensTitle">Every screen engineered for clarity.</h2>
+      </div>
+
+      <div class="screens-track" id="screensTrack">
+        <img src="assets/screen-authenticator.png" alt="Authenticator screen" class="phone-shot reveal" />
+        <img src="assets/screen-passwords.png" alt="Passwords screen" class="phone-shot reveal" />
+        <img src="assets/screen-notes.png" alt="Notes screen" class="phone-shot reveal" />
+        <img src="assets/screen-onboarding.png" alt="Onboarding screen" class="phone-shot reveal" />
+        <img src="assets/screen-premium.png" alt="Premium screen" class="phone-shot reveal" />
+        <img src="assets/screen-private.png" alt="Private codes screen" class="phone-shot reveal" />
+      </div>
+    </section>
+
+    <section id="security" class="section spotlight">
+      <div class="spotlight-bg"></div>
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="securityEyebrow">Security Model</p>
+        <h2 data-i18n="securityTitle">Privacy-first architecture.</h2>
+      </div>
+
+      <div class="security-grid">
+        <article class="security-item reveal">
+          <h3 data-i18n="s1Title">On-device protection</h3>
+          <p data-i18n="s1Body">Sensitive values are protected locally and guarded by Face ID / Touch ID and passcode lock.</p>
+        </article>
+        <article class="security-item reveal">
+          <h3 data-i18n="s2Title">Encrypted backup flow</h3>
+          <p data-i18n="s2Body">Backups are encrypted before leaving your device, reducing exposure and preserving ownership.</p>
+        </article>
+        <article class="security-item reveal">
+          <h3 data-i18n="s3Title">Clear consent controls</h3>
+          <p data-i18n="s3Body">You decide what syncs, what remains local, and how your data lifecycle is managed.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="download" class="section cta reveal">
+      <h2 data-i18n="ctaTitle">Ready to protect everything that matters?</h2>
+      <p data-i18n="ctaBody">BlueGuard Authenticator gives you a secure command center for your digital identity.</p>
+      <div class="hero-buttons">
+        <a class="btn btn-primary" href="#" data-i18n="ctaButton">Download on App Store</a>
+      </div>
+    </section>
+
+    <section id="legal" class="section legal-links reveal">
+      <h2 data-i18n="legalTitle">Legal</h2>
+      <p data-i18n="legalBody">Policies required for App Store review and user transparency.</p>
+      <div class="legal-grid">
+        <a class="legal-card" href="terms.html" data-i18n="legalTerms">Terms of Use</a>
+        <a class="legal-card" href="privacy.html" data-i18n="legalPrivacy">Privacy Policy</a>
+        <a class="legal-card" href="service-agreement.html" data-i18n="legalService">Service Agreement</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>BlueGuard Authenticator</strong>
+      <p data-i18n="footerBy">By SimHaDo Apps</p>
+    </div>
+    <div>
+      <p>Danyil Skrypnichenko</p>
+      <a href="mailto:quicktasksup@gmail.com">quicktasksup@gmail.com</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
