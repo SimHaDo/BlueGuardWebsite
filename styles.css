@@ -170,6 +170,7 @@ h3 { font-size: 1.4rem; }
 .lead { color: var(--muted); font-size: 1.08rem; max-width: 650px; }
 
 .hero-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+.cta .hero-buttons { justify-content: center; }
 
 .hero-visual {
   position: relative;
@@ -246,10 +247,24 @@ h3 { font-size: 1.4rem; }
   transition: transform .3s, border-color .3s, box-shadow .3s;
 }
 
+.detail-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .feature-card p, .security-item p {
   margin: 0;
   color: var(--muted);
   line-height: 1.55;
+}
+
+.detail-arrow {
+  display: inline-block;
+  margin-top: 14px;
+  color: #9ad8ff;
+  font-weight: 700;
+  font-size: .9rem;
 }
 
 .feature-card:hover, .security-item:hover {
