@@ -217,7 +217,17 @@ const i18n = {
 };
 
 const langSelect = document.getElementById("lang");
-const storedLang = localStorage.getItem("blueguard_lang") || "en";
+const supportedLangs = ["en", "ja", "ru", "uk", "pt"];
+
+function resolveDeviceLanguage() {
+  const candidate = (navigator.languages && navigator.languages[0]) || navigator.language || "en";
+  const normalized = String(candidate).toLowerCase();
+  const short = normalized.split("-")[0];
+  return supportedLangs.includes(short) ? short : "en";
+}
+
+const storedLang = localStorage.getItem("blueguard_lang");
+const initialLang = supportedLangs.includes(storedLang) ? storedLang : resolveDeviceLanguage();
 
 function applyTranslations(lang) {
   const dict = i18n[lang] || i18n.en;
@@ -229,8 +239,8 @@ function applyTranslations(lang) {
 }
 
 if (langSelect) {
-  langSelect.value = storedLang;
-  applyTranslations(storedLang);
+  langSelect.value = initialLang;
+  applyTranslations(initialLang);
 
   langSelect.addEventListener("change", (e) => {
     const lang = e.target.value;

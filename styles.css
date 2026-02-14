@@ -417,6 +417,7 @@ body.legal-page {
 .legal-main h2 { font-size: 1.4rem; margin-top: 26px; }
 .legal-main p, .legal-main li { color: #c7ddf5; line-height: 1.7; }
 .legal-main ul { padding-left: 20px; }
+.legal-meta { color: #9ec9ef; font-weight: 700; margin-top: 0; }
 
 @media (max-width: 1000px) {
   .hero { grid-template-columns: 1fr; min-height: auto; }

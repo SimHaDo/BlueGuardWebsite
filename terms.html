@@ -15,101 +15,20 @@
       <img src="assets/logo.png" alt="BlueGuard Logo" class="brand-logo" />
       <span>BlueGuard</span>
     </a>
-    <a class="btn btn-secondary" href="index.html">Back to Website</a>
+    <div class="actions">
+      <label for="lang" class="sr-only">Language</label>
+      <select id="lang" class="lang-switch" aria-label="Language">
+        <option value="en">EN</option>
+        <option value="ja">JA</option>
+        <option value="ru">RU</option>
+        <option value="uk">UK</option>
+        <option value="pt">PT</option>
+      </select>
+      <a class="btn btn-secondary" id="legalBack" href="index.html">Back to Website</a>
+    </div>
   </header>
 
-  <main class="legal-main">
-    <h1>Terms of Use</h1>
-    <p>Effective date: February 12, 2026</p>
-    <p>
-      These Terms of Use govern your use of BlueGuard Authenticator (the "App"), provided by
-      <strong>SimHaDo Apps</strong>, developer <strong>Danyil Skrypnichenko</strong>
-      (contact: <a href="mailto:quicktasksup@gmail.com">quicktasksup@gmail.com</a>).
-      By downloading, accessing, or using the App, you agree to these Terms.
-    </p>
-
-    <h2>1. Eligibility and Acceptance</h2>
-    <ul>
-      <li>You must use the App in compliance with applicable laws and platform terms (including Apple App Store terms).</li>
-      <li>If you do not agree with these Terms, do not use the App.</li>
-    </ul>
-
-    <h2>2. License Grant</h2>
-    <ul>
-      <li>You are granted a limited, non-exclusive, non-transferable, revocable license to use the App for personal or internal business purposes.</li>
-      <li>You may not sublicense, redistribute, or commercially exploit the App except where expressly permitted by law.</li>
-    </ul>
-
-    <h2>3. Restrictions</h2>
-    <ul>
-      <li>You may not reverse engineer, decompile, disassemble, or attempt to derive source code except where local law explicitly permits it.</li>
-      <li>You may not bypass security controls, abuse backup mechanisms, or use the App for illegal activity.</li>
-      <li>You may not use the App in a way that damages the service experience of other users.</li>
-    </ul>
-
-    <h2>4. User Responsibility</h2>
-    <ul>
-      <li>You are responsible for safeguarding your devices, passcodes, recovery keys, and backup credentials.</li>
-      <li>You are responsible for the accuracy and legality of content you store in the App (password entries, notes, backup codes, etc.).</li>
-      <li>If you lose your credentials, we may be unable to recover encrypted content.</li>
-    </ul>
-
-    <h2>5. Subscriptions and Payments</h2>
-    <ul>
-      <li>Some features may require an in-app subscription or one-time purchase through Apple In-App Purchase.</li>
-      <li>Billing, renewal, and cancellation are managed by Apple and subject to Apple media services terms.</li>
-      <li>Any free trial terms are shown in the App before purchase.</li>
-    </ul>
-
-    <h2>6. Intellectual Property</h2>
-    <ul>
-      <li>The App, including its design, text, logos, graphics, and software, is owned by SimHaDo Apps and protected by intellectual property laws.</li>
-      <li>BlueGuard name, logo, and branding assets may not be used without written permission.</li>
-    </ul>
-
-    <h2>7. Third-Party Services</h2>
-    <ul>
-      <li>The App may interoperate with third-party platforms (for example cloud providers, email, or websites linked by users).</li>
-      <li>We are not responsible for third-party service availability, security, or terms.</li>
-    </ul>
-
-    <h2>8. Disclaimer of Warranties</h2>
-    <ul>
-      <li>The App is provided "as is" and "as available" without warranties of any kind, to the maximum extent permitted by law.</li>
-      <li>We do not guarantee uninterrupted operation, complete compatibility, or absolute protection against all security threats.</li>
-    </ul>
-
-    <h2>9. Limitation of Liability</h2>
-    <ul>
-      <li>To the maximum extent permitted by law, SimHaDo Apps and Danyil Skrypnichenko are not liable for indirect, incidental, special, consequential, or punitive damages.</li>
-      <li>Total liability shall not exceed the amount you paid for the App in the twelve (12) months before the event giving rise to the claim.</li>
-    </ul>
-
-    <h2>10. Termination</h2>
-    <ul>
-      <li>These Terms remain effective until terminated by you or us.</li>
-      <li>We may suspend or terminate access for violations of these Terms or unlawful conduct.</li>
-      <li>Upon termination, sections intended to survive (IP, liability, disclaimer, dispute terms) remain in effect.</li>
-    </ul>
-
-    <h2>11. Governing Law</h2>
-    <p>
-      These Terms are governed by applicable laws of the jurisdiction in which the developer operates,
-      unless mandatory consumer law requires otherwise.
-    </p>
-
-    <h2>12. Changes to Terms</h2>
-    <p>
-      We may update these Terms from time to time. The updated version will be posted on this page with a new effective date.
-      Continued use of the App after updates means you accept the revised Terms.
-    </p>
-
-    <h2>13. Contact</h2>
-    <p>
-      Developer: Danyil Skrypnichenko<br />
-      Studio: SimHaDo Apps<br />
-      Email: <a href="mailto:quicktasksup@gmail.com">quicktasksup@gmail.com</a>
-    </p>
-  </main>
+  <main class="legal-main" id="legalContent"></main>
+  <script src="legal.js"></script>
 </body>
 </html>
